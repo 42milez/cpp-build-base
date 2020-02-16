@@ -14,9 +14,3 @@ RUN apk update                                   \
     && rm -rf /var/cache/apk/*                   \
     && pip3 install --no-cache-dir --upgrade pip \
     && pip3 install --no-cache-dir conan==1.22.2
-
-RUN mkdir /var/app
-
-WORKDIR /var/app
-
-CMD [ "/bin/bash" ]
